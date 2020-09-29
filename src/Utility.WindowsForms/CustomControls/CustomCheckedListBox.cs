@@ -49,7 +49,7 @@ namespace Utility.WindowsForms.CustomControls
 
         /// ////////////////////////////////////////////////////////////////////
         /// <summary>
-        /// Parameterless ctor for Visual Studio.
+        ///     Parameterless ctor for Visual Studio.
         /// </summary>
         public CustomCheckedListBox() : this(null)
         {
@@ -57,7 +57,7 @@ namespace Utility.WindowsForms.CustomControls
 
         /// ////////////////////////////////////////////////////////////////////
         /// <summary>
-        /// Standard ctor for everyone else.
+        ///     Standard ctor for everyone else.
         /// </summary>
         /// <param name="back">Delegate to provide a background color</param>
         /// <param name="fore">Delegate to provide a foreground color</param>
@@ -90,8 +90,8 @@ namespace Utility.WindowsForms.CustomControls
 
         /// ////////////////////////////////////////////////////////////////////
         /// <summary>
-        /// Override the CheckedListBox method to allow changes to the
-        /// foreground, background, and font.
+        ///     Override the CheckedListBox method to allow changes to the
+        ///     foreground, background, and font.
         /// </summary>
         /// <param name="e"></param>
         protected override void OnDrawItem(DrawItemEventArgs e)
@@ -133,9 +133,9 @@ namespace Utility.WindowsForms.CustomControls
 
         /// ////////////////////////////////////////////////////////////////////
         /// <summary>
-        /// If base.OnFontChanged fires, and we have changed the font size,
-        /// that could cause problems.  Fire base.OnFontChanged only if
-        /// we have not supplied a font.
+        ///     If base.OnFontChanged fires, and we have changed the font size,
+        ///     that could cause problems.  Fire base.OnFontChanged only if
+        ///     we have not supplied a font.
         /// </summary>
         /// <param name="e"></param>
         protected override void OnFontChanged(EventArgs e)

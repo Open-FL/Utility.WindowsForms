@@ -17,6 +17,7 @@ namespace Utility.WindowsForms.CustomControls
 
 
         private static Task<ProgressIndicator> ThreadTask;
+        private readonly List<ProgressIndicator> Subtasks = new List<ProgressIndicator>();
         public GroupBox gbSubTask;
         public Label lblStatus;
         public Panel mainProgressPanel;
@@ -25,7 +26,6 @@ namespace Utility.WindowsForms.CustomControls
         public ProgressBar pbProgress;
         private Action<Task<ProgressIndicator>> SubCreator;
         public Panel subTaskPanel;
-        private readonly List<ProgressIndicator> Subtasks = new List<ProgressIndicator>();
 
         private ProgressIndicator SuperTask;
 

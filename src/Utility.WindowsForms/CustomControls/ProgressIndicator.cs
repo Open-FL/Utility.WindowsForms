@@ -5,7 +5,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using Utility.ProgressFeedback;
 using Utility.WindowsForms.Forms;
 
 namespace Utility.WindowsForms.CustomControls
